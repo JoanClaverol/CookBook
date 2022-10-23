@@ -2,96 +2,142 @@
 <html lang="en">
 
 <head>
+    <!-- inspiration source https://www.pinterest.com/pin/692358142727936669/?mt=login -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Document</title>
     <!-- add your css after bootstrap css -->
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <header class="sticky-top">
-        <!-- navbar aligned in the center -->
-        <div class="navbar-brand text-center bg-light">CookBook Home</div>
+    <header class="container-fluid">
+        <div class="navbar-brand text-center bg-light lead m-2">CookBook Home</div>
 
-        <nav class="navbar-expand-lg row justify-content-around text-center align-items-center">
-            <div class="container-fluid">
-                <a class="p-2 text-muted" href="#">Home</a>
-                <a class="p-2 text-muted" href="#">Recipes</a>
-                <a class="p-2 text-muted" href="#">Blog</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+        <nav class="navbar-expand-lg row text-center align-items-center m-2 shadow-sm justify-content-center">
+            <div class="container-xxl">
+                <a class="p-2 text-muted lead" href="#intro">Home</a>
+                <a class="p-2 text-muted lead" href="recipie.html">Recipes</a>
+                <a class="p-2 text-muted lead" href="#">Blog</a>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-target="#navbarSupportedContent">
-                    <!-- add a search logo as svg imported from internet -->
-                    <a class="p-2 text-muted">Search</a>
+                    <a class="navbar-toggle-icon p-2 text-muted lead">Search</a>
                 </button>
+
+                <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+
+                </div>
+            </div>
+            <!-- <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <button class="navbar-toggler p-2" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+                    <a class="text-muted lead">Search</a>
+                </button> -->
             </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
         </nav>
         <!-- search bar collapsed until you click a button -->
     </header>
 
-
-    <div class="row">
-        <div class="col">
-            <div class="jumbotron p-3 p-md-5 opacity-75 rounded"
+    <section id="intro">
+        <div class="container-fluid p-0">
+            <div class=" row"
                 style="background-image: url('img/background-multiple-dishes.png'); background-size: cover; background-position: center;">
                 <div class="col-12" style="background-color: rgba(0,0,0, 0.4);">
                     <h1 class="display-4 text-white text-center">Welcome to our Cook Book!</h1>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="row justify-content-around text-center ">
-        <div class="col-4">
-            Launch
-        </div>
-        <div class="col-4">
-            Dinner
-        </div>
-        <div class="col-4">
-            Deserts
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <div class="jumbotron p-3 p-md-5 opacity-75 rounded"
-                style="background-image: url('img/sea-image.png'); background-size: cover; height:30vh; background-position: center;">
+    <section id="top-receipes">
+        <div class="container-fluid p-0">
+            <div class="lead display-6 text-center m-4">
+                5 pictures of top Recipes
             </div>
+            <div class="row justify-content-center">
+                <div class="col-2 text-center">
+                    <div class="lead text-center">Spanish</div>
+                    <img class="img-fluid" src="/img/paella.png" alt="Spanish Food">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container-fluid">
+        <div class="lead display-6 text-center m-4">
+            Pick your meal!
+        </div>
+        <div class="row text-center m-4 justify-content-around">
+            <div class="col-4">
+                <p class="lead text-center">
+                    Launch
+                </p>
+                <button class="btn btn-outline-primary">Go</button>
+            </div>
+            <div class="col-4">
+                <p class="lead text-center">
+                    Dinner
+                </p>
+                <button class="btn btn-outline-primary">Go</button>
+            </div>
+            <div class="col-4">
+                <p class="lead text-center">
+                    Deserts
+                </p>
+                <button class="btn btn-outline-primary">Go</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section id="recipes-types">
+        <div class="container-fluid p-0">
+            <div class="lead display-6 text-center m-4">
+                A grid of 6 types of receips
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid p-0">
+        <div class=" row"
+            style="background-image: url('img/sea-image.png'); background-size: cover; height:30vh; background-position: center;">
         </div>
     </div>
 
     <!-- add a nice footer -->
-    <footer class="container-fluid bg-light">
+    <footer class=" bg-light m-2">
         <div class="row">
             <div class="col-12">
                 <div class="text-center">
                     <p>© 2021 CookBook</p>
                 </div>
+                Add social media links
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
