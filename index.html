@@ -53,27 +53,27 @@
     <section id="top-receipes">
         <div class="container-fluid mt-2 mb-2">
             <div class="lead display-6 text-center">
-                5 pictures of top Recipes
+                Top Recipes
             </div>
             <div class="row justify-content-center align-items-end text-center">
                 <div class="col-4 col-lg-2">
-                    <div class="fs-6">Paella</div>
+                    <div class="fs-6 lead">Paella</div>
                     <img class="img-thumbnail" src="/img/paella.png" alt="Spanish Food">
                 </div>
                 <div class="col-4 col-lg-2">
-                    <div class="fs-6">Eggs & Beacon</div>
+                    <div class="fs-6 lead">Eggs & Beacon</div>
                     <img class="img-thumbnail" src="/img/breakfast.png" alt="Spanish Food">
                 </div>
                 <div class="col-4 col-lg-2">
-                    <div class="fs-6">Noodles</div>
+                    <div class="fs-6 lead">Noodles</div>
                     <img class="img-thumbnail" src="/img/asian-food.png" alt="Spanish Food">
                 </div>
                 <div class="col-4 col-lg-2">
-                    <div class="fs-6">Hamburgers</div>
+                    <div class="fs-6 lead">Hamburgers</div>
                     <img class="img-thumbnail" src="/img/hamurguer.png" alt="Spanish Food">
                 </div>
                 <div class="col-4 col-lg-2">
-                    <div class="fs-6">Pasta</div>
+                    <div class="fs-6 lead">Pasta</div>
                     <img class="img-thumbnail" src="/img/pasta-picture.png" alt="Spanish Food">
                 </div>
             </div>
@@ -85,63 +85,73 @@
         <div class="lead display-6 text-center">
             Pick your meal!
         </div>
-        <div class="row text-center justify-content-around">
-            <div class="col-4">
-                <p class="lead text-center">
-                    Launch
-                </p>
-                <button class="btn btn-outline-primary">Go</button>
-            </div>
-            <div class="col-4">
-                <p class="lead text-center">
-                    Dinner
-                </p>
-                <button class="btn btn-outline-primary">Go</button>
-            </div>
-            <div class="col-4">
-                <p class="lead text-center">
-                    Deserts
-                </p>
-                <button class="btn btn-outline-primary">Go</button>
-            </div>
+        <div class="col justify-content-center text-center pt-2">
+
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFormFood" aria-expanded="false" aria-controls="collapseFormFood">
+                Lunch
+            </button>
+
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFormFood" aria-expanded="false" aria-controls="collapseFormFood">
+                Dinner
+            </button>
+
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseDeserts" aria-expanded="false" aria-controls="collapseDeserts">
+                Deserts
+            </button>
         </div>
-    </div>
+
+        <div class="collapse" id="collapseDeserts">
+            <form>
+                <input type="checkbox" name="" id="">
+            </form>
+        </div>
+
+        <div class="collapse col-12 text-center align-content-center" id="collapseFormFood">
+            <form class="">
+                <input type="text" class="form-text" placeholder="Add you desired food">
+                <button type="submit" class="btn btn-secondary btn-sm"
+                    style="--bs-btn-padding-y: .15rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: .60rem;">Submit</button>
+            </form>
+        </div>
     </div>
 
     <section id="recipes-types">
         <div class="container-fluid mt-2">
-            <div class="lead display-6 text-center">
-                A grid of 6 types of receips
+            <div class="lead display-6 text-center mb-2">
+                Main recipie types
             </div>
         </div>
         <div class="container-fluid mb-3">
             <div class="row text-center justify-content-around m-0">
                 <div class="col-4 col-md-1">
-                    <div class="fs-6">Type 1</div>
+                    <div class="fs-6 lead">Cakes</div>
                     <img src="img/silhouettes/350-3503261_wedding-icon-through-icon-graphical-png-image-and.png" alt=""
                         class="img-logo">
                 </div>
                 <div class="col-4 col-md-1">
-                    <div class="fs-6">Type 1</div>
+                    <div class="fs-6 lead">Meat</div>
                     <img src="img/silhouettes/chicken.png" alt="" class="img-logo">
                 </div>
                 <div class="col-4 col-md-1">
-                    <div class="fs-6">Type 1</div>
+                    <div class="fs-6 lead">High Cuisine</div>
                     <img src="img/silhouettes/covered-food-tray-of-hotel-room-service-silhouette-icon-vector.jpg" alt=""
                         class="img-logo">
                 </div>
                 <div class="col-4 col-md-1">
-                    <div class="fs-6">Type 1</div>
+                    <div class="fs-6 lead">Fast Food</div>
                     <img src="img/silhouettes/fast-food-silhouette-eating-drinking-sign-fast-food-silhouette-eating-drinking-sign-vector-illustration-127666250.jpg"
                         alt="" class="img-logo">
                 </div>
                 <div class="col-4 col-md-1">
-                    <div class="fs-6">Type 1</div>
+                    <div class="fs-6 lead">Healthy</div>
                     <img src="img/silhouettes/png-clipart-computer-icons-apple-food-silhouettes-food-leaf-thumbnail.png"
                         alt="" class="img-logo">
                 </div>
                 <div class="col-4 col-md-1">
-                    <div class="fs-6">Type 1</div>
+                    <div class="fs-6 lead">Others</div>
                     <img src="img/silhouettes/rice-bowl-with-chopsticks-silhouette-black-and-white-icon-design-element-on-isolated-white-background-free-vector.jpg"
                         alt="" class="img-logo">
                 </div>
