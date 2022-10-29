@@ -15,3 +15,31 @@
     color: white;
 
   }
+
+  ul {
+    line-height: 200%;
+  }
+
+  .img-fluid:hover {
+    background-color: rgba(255, 255, 255, 0.34);
+    opacity: 0.5;
+  }
+
+  .hoverwrap {
+    position: relative;
+  }
+  .hovercap {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    visibility: none; opacity: 0;
+  }
+
+  .hoverwrap:hover .hovercap {
+    visibility: visible; opacity: 1;
+  }
