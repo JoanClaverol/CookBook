@@ -3,24 +3,22 @@
 
 <head>
     <!-- inspiration source https://www.pinterest.com/pin/692358142727936669/?mt=login -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Document</title>
     <!-- add your css after bootstrap css -->
-
     <link rel="stylesheet" href="src/recipie.css">
+    <link rel="stylesheet" href="src/index.css">
 </head>
 
 <body>
-    <header class="container-fluid">
-        <!-- <div class="navbar-brand text-center bg-light lead m-2">CookBook Home</div> -->
 
-        <nav class="navbar navbar-expand-md">
+    <section id="header">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <div class="navbar-brand text-center lead m-2">CookBook</div>
+                <div class="navbar-brand text-center lead">CookBook</div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,7 +26,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active lead" aria-current="page" href="#" style="color:white">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html"
+                                style="color:white">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="recipie.html" style="color:white">Recipe</a>
@@ -40,47 +39,42 @@
                 </div>
             </div>
         </nav>
-        <!-- <nav class="navbar-expand-lg row text-center align-items-center m-2 shadow-sm justify-content-center">
-            <div class="container-xxl">
-                <a class="p-2 text-muted lead" href="#intro">Home</a>
-                <a class="p-2 text-muted lead" href="recipie.html">Recipes</a>
-                <a class="p-2 text-muted lead" href="#">Blog</a>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-target="#navbarSupportedContent">
-                    <a class="navbar-toggle-icon p-2 text-muted lead">Search</a>
-                </button>
-            </div>
-
-        </nav> -->
-        <!-- search bar collapsed until you click a button -->
-    </header>
-
-    <section id="intro">
-        <div class="container-fluid p-0">
-            <div class=" row"
-                style="background-image: url('img/background-multiple-dishes.png'); background-size: cover; background-position: center;">
-                <div class="col-12" style="background-color: rgba(0,0,0, 0.4);">
-                    <h1 class="display-4 text-white text-center">Welcome to our Cook Book!</h1>
-                </div>
-            </div>
-        </div>
     </section>
 
+    <div class="container-fluid">
+        <div class="row align-items-center"
+            style="background-image: url('img/background-multiple-dishes.png'); background-size: cover; background-position: center; width: auto; height: 13vh;">
+            <div class="col-12" style="background-color: rgba(0,0,0, 0.4);">
+                <h1 class="display-4 text-white text-center">Welcome to our Cook Book!</h1>
+            </div>
+        </div>
+    </div>
+
     <section id="top-receipes">
-        <div class="container-fluid p-0">
-            <div class="lead display-6 text-center m-4">
+        <div class="container-fluid mt-2 mb-2">
+            <div class="lead display-6 text-center">
                 5 pictures of top Recipes
             </div>
-            <div class="row justify-content-center">
-                <div class="col-2 text-center">
-                    <div class="lead text-center">Spanish</div>
-                    <img class="img-fluid" src="/img/paella.png" alt="Spanish Food">
+            <div class="row justify-content-center align-items-end text-center">
+                <div class="col-4 col-lg-2">
+                    <div class="fs-6">Paella</div>
+                    <img class="img-thumbnail" src="/img/paella.png" alt="Spanish Food">
+                </div>
+                <div class="col-4 col-lg-2">
+                    <div class="fs-6">Eggs & Beacon</div>
+                    <img class="img-thumbnail" src="/img/breakfast.png" alt="Spanish Food">
+                </div>
+                <div class="col-4 col-lg-2">
+                    <div class="fs-6">Noodles</div>
+                    <img class="img-thumbnail" src="/img/asian-food.png" alt="Spanish Food">
+                </div>
+                <div class="col-4 col-lg-2">
+                    <div class="fs-6">Hamburgers</div>
+                    <img class="img-thumbnail" src="/img/hamurguer.png" alt="Spanish Food">
+                </div>
+                <div class="col-4 col-lg-2">
+                    <div class="fs-6">Pasta</div>
+                    <img class="img-thumbnail" src="/img/pasta-picture.png" alt="Spanish Food">
                 </div>
             </div>
         </div>
@@ -88,10 +82,10 @@
 
 
     <div class="container-fluid">
-        <div class="lead display-6 text-center m-4">
+        <div class="lead display-6 text-center">
             Pick your meal!
         </div>
-        <div class="row text-center m-4 justify-content-around">
+        <div class="row text-center justify-content-around">
             <div class="col-4">
                 <p class="lead text-center">
                     Launch
@@ -115,33 +109,66 @@
     </div>
 
     <section id="recipes-types">
-        <div class="container-fluid p-0">
-            <div class="lead display-6 text-center m-4">
+        <div class="container-fluid mt-2">
+            <div class="lead display-6 text-center">
                 A grid of 6 types of receips
+            </div>
+        </div>
+        <div class="container-fluid mb-3">
+            <div class="row text-center justify-content-around m-0">
+                <div class="col-4 col-md-1">
+                    <div class="fs-6">Type 1</div>
+                    <img src="img/silhouettes/350-3503261_wedding-icon-through-icon-graphical-png-image-and.png" alt=""
+                        class="img-logo">
+                </div>
+                <div class="col-4 col-md-1">
+                    <div class="fs-6">Type 1</div>
+                    <img src="img/silhouettes/chicken.png" alt="" class="img-logo">
+                </div>
+                <div class="col-4 col-md-1">
+                    <div class="fs-6">Type 1</div>
+                    <img src="img/silhouettes/covered-food-tray-of-hotel-room-service-silhouette-icon-vector.jpg" alt=""
+                        class="img-logo">
+                </div>
+                <div class="col-4 col-md-1">
+                    <div class="fs-6">Type 1</div>
+                    <img src="img/silhouettes/fast-food-silhouette-eating-drinking-sign-fast-food-silhouette-eating-drinking-sign-vector-illustration-127666250.jpg"
+                        alt="" class="img-logo">
+                </div>
+                <div class="col-4 col-md-1">
+                    <div class="fs-6">Type 1</div>
+                    <img src="img/silhouettes/png-clipart-computer-icons-apple-food-silhouettes-food-leaf-thumbnail.png"
+                        alt="" class="img-logo">
+                </div>
+                <div class="col-4 col-md-1">
+                    <div class="fs-6">Type 1</div>
+                    <img src="img/silhouettes/rice-bowl-with-chopsticks-silhouette-black-and-white-icon-design-element-on-isolated-white-background-free-vector.jpg"
+                        alt="" class="img-logo">
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class=" row"
-            style="background-image: url('img/sea-image.png'); background-size: cover; height:30vh; background-position: center;">
+            style="background-image: url('img/sea-image.png'); background-size: cover; height:30vh; background-position: center; width: auto;">
         </div>
     </div>
 
     <!-- add a nice footer -->
-    <footer class="footer">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <div class="text-center">
-                    <p>© 2021 CookBook</p>
+            <div class="col">
+                <div class="footer">
+                    <p>CookBook | Follow Us On Social Media</p>
                 </div>
-                Add social media links
             </div>
-        </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 
 </body>
