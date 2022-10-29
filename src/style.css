@@ -1,0 +1,51 @@
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(101, 53, 144);
+    color: white;
+    text-align: center;
+  }
+
+
+  nav {
+    background-color: rgba(101, 53, 144, 0.7);
+    color: white;
+
+  }
+
+  .border {
+    width: 70%;
+    align-items: center;
+  }
+
+body {
+    color: rgb(58, 58, 58);
+}
+
+
+.img-fluid:hover {
+    background-color: rgba(255, 255, 255, 0.34);
+    opacity: 0.5;
+  }
+
+  .hoverwrap {
+    position: relative;
+  }
+  .hovercap {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    visibility: none; opacity: 0;
+  }
+
+  .hoverwrap:hover .hovercap {
+    visibility: visible; opacity: 1;
+  }
